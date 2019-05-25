@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript learning</title>
+
+    <!--js is dynamically typed-->
+    <!--js is loosely typed-->
+
+    <script type="text/javascript">
+        var num=15;
+        var a=4;  //right to left
+        var b=5;
+        var result=a + b;   //left to right 
+        <!--alert(num);-->
+        <!--document.write(num); -->
+
+        <!--document.write("<h1>Result is : "+result+"</h1>");-->
+
+        //objects
+
+        <!--var Car = {-->
+        <!--car_brand:"tesla",-->
+        <!--car_model:"Model 3",-->
+        <!--price:35000,-->
+
+        <!--teslaAutoPilot:function(){-->
+        <!--return "<h2>This car has Auto pilot</h2>";-->
+        <!--}-->
+        <!--}-->
+        <!--document.write("<h2>"+Car.teslaAutoPilot()+"</h2>");-->
+
+        <!--constractor function-->
+
+        function Cars(car_brand,car_model,price){
+        this.car_brand=car_brand;
+        this.car_model=car_model;
+        this.price=price;
+
+        this.teslaAutoPilot:function(){
+        document.write("<h2>This car has Auto pilot</h2>");
+        }
+        }
+
+        var c1=new Cars("Tesla","Model 3",300000);
+        c1.teslaAutoPilot();
+        document.write("<h2>"+c1.car_model+"</h2>");
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

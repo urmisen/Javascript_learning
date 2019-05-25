@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <!--taking input from select box(drop_down)-->
+    <script type="text/javascript">
+        function fn(){
+           var select = document.getElementById("sel");
+           alert(select.options[select.selectedIndex].value);
+        }
+
+    </script>
+</head>
+<body>
+<select id="sel">
+    <option value="Python">Python</option>
+    <option value="Java">Java</option>
+    <option value="C++">C++</option>
+</select>
+<button id="btn" onclick="fn()">Click Me</button>
+
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--getElementByTagName method-->
+    <script type="text/javascript">
+        function fn(){
+           var para = document.getElementsByTagName("p");
+           para[0].style.fontWeight = "bold";
+
+
+           for(var i=0;i<para.length;i++){
+              para[i].style.color = "red";
+           }
+
+
+        }
+
+    </script>
+</head>
+<body>
+    <p>This is paragraph 1</p>
+    <p>This is paragraph 1</p>
+    <p>This is paragraph 1</p>
+    <p>This is paragraph 1</p>
+    <p>This is paragraph 1</p>
+
+    <br>
+    <button id="btn" onclick="fn()">Click Me</button>
+</body>
+</html>

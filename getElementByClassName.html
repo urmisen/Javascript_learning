@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--getElementByClassName method-->
+    <script type="text/javascript">
+        function fn(){
+
+            var element = document.getElementsByClassName("mypara");
+            for(var i=0;i<element.length;i++){
+                element[i].style.color="red";
+            }
+        }
+    </script>
+</head>
+<body>
+    <p id="p1" class="mypara">This is paragraph 1</p>
+    <p id="p2">This is paragraph 2</p>
+    <p id="p3" class="mypara">This is paragraph 3</p>
+    <p id="p4">This is paragraph 4</p>
+    <p id="p5" class="mypara">This is paragraph 5</p>
+    <br>
+    <button onclick="fn()">Click Me</button>
+</body>
+</html>

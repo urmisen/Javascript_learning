@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--3.taking input from radiobutton-->
+    <script>
+        function fn(){
+            var rd1=document.getElementById("rd1");
+            var rd2=document.getElementById("rd2");
+            var rd2=document.getElementById("rd3");
+
+            if(rd1.checked==true)
+                alert("The channel selected is:"+rd1.value);
+            else if(rd2.checked==true)
+                alert("The channel selected is:"+rd2.value);
+            else if(rd3.checked==true)
+                alert("The channel selected is:"+rd3.value);
+            else
+                alert("No Channel selected");
+
+        }
+    </script>
+</head>
+<body>
+
+    <input id="rd1" name="rad" type="radio" value="Anna">Anna</input>
+    <br>
+    <input id="rd2" name="rad" type="radio" value="Oli">Oli</input>
+    <br>
+    <input id="rd3" name="rad" type="radio" value="Urmi">Urmi</input>
+    <br>
+    <button id="btn" onclick="fn()">Click Me</button>
+
+
+</body>
+</html>

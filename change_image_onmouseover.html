@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> </title>
+    <!--mouseover and mouseout event-->
+    <script type="text/javascript">
+        function fn1(){
+            document.getElementById("img1").src="dev_photo.jpg";
+        }
+        function fn2(){
+            document.getElementById("img1").src="me.jpg";
+        }
+    </script>
+</head>
+<body>
+    
+    <img id="img1" onmouseover="fn1()" onmouseout="fn2()" src="me.jpg" width="300">
+</body>
+</html>

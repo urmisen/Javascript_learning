@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     <!--password should greater than 5 and not blank(if anything wrong mark it red)-->
+    <script type="text/javascript">
+    function validate(){
+        var username = document.getElementById("name");
+        var password = document.getElementById("pass");
+
+        if(username.value.trim()==""){
+            alert("Username is blank");
+            username.style.border = "solid 3px red";
+            document.getElementById("label").style.visibility="visible";
+            return false;
+        }
+        else if(password.value.trim()== ""){
+            alert("Password is blank");
+            return false;
+        }
+        else if(password.value.trim().length<5){
+            alert("Password is too short ");
+            return false;
+        }
+        else{
+             true;
+        }
+        }
+    </script>
+</head>
+<body>
+    <form action="change_image_onmouseover.html" onsubmit="return validate()">
+        <input id="name" placeholder="Username" type="text" >
+        <label id="label" style="color:red; visibility:hidden;">Invalid</label>
+        <br><br>
+        <input id="pass" placeholder="Password" type="password" >
+        <br><br>
+        <button id="btn" type="submit" >Submit</button>
+    </form>
+</body>
+</html>
